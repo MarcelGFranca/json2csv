@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.csv-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.csv-table th,
+.csv-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.csv-table th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+.csv-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.csv-table tr:hover {
+    background-color: #f1f1f1;
+}
